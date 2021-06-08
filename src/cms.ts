@@ -19,7 +19,7 @@ let config:CmsConfig = {
     site_url: process.env.SITE_URL,
     display_url: process.env.DISPLAY_URL,
     logo_url: process.env.LOGO_URL,
-    show_preview_links: JSON.parse(process.env.SHOW_PREVIEW_LINKS),
+    show_preview_links: true,
     publish_mode: 'editorial_workflow',
     collections
 }
