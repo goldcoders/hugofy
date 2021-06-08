@@ -1,6 +1,6 @@
-# Pitlord INC. - CMS
+# Hugofy - Hugo CMS
 
-![Pitlord INC - CMS](https://user-images.githubusercontent.com/55337687/120845837-ec50ee00-c5a3-11eb-9b7f-3cfcf46af3c5.png)
+![Hugofy - Hugo CMS](https://user-images.githubusercontent.com/55337687/120845837-ec50ee00-c5a3-11eb-9b7f-3cfcf46af3c5.png)
 
 
 ## Basic Requirements
@@ -20,7 +20,7 @@
 
 - open gitbash on windows , or terminal on linux / mac
 - go to your Project Directory
-- type command: `git clone https://github.com/pitlords/cms`
+- type command: `git clone https://github.com/goldcoders/hugofy`
 - install all the dependencies type command: `yarn`
 
 ### SET Your .env
@@ -39,8 +39,8 @@
 LOCAL_BACKEND=true
 SHOW_PREVIEW_LINKS=true
 MEDIA_FOLDER=exampleSite/static/images
-SITE_URL=http://pitlords.com
-DISPLAY_URL=http://pitlords.com
+SITE_URL=http://example.com
+DISPLAY_URL=http://example.com
 LOGO_URL=/images/logo.svg
 PUBLIC_FOLDER=/images
 ```
