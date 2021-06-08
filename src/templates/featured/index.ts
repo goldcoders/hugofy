@@ -4,4 +4,3 @@ import FeaturedOffset2By2Grid from './offset_2x2_grid';
 import FeatureImageImage from './split_image';
 
 export { FeatureImageImage, FeaturedCenter2By2, FeaturedOffset2By2Grid, Featured3Col };
-
