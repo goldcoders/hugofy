@@ -1,0 +1,17 @@
+# packages
+node_modules/
+.DS_Store
+
+.cache
+dist
+
+# env
+.env*
+!.env.example
+!.env.local
+!.env.production
+
+# editor
+.vscode
+*.bak
+

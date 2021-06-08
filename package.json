@@ -1,0 +1,35 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "repository": "git@github.com:goldcoders/cms.git",
+  "author": "Goldcoders <goldcoders@protonmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "scripts": {
+    "cms-dev": "parcel src/index.html",
+    "cms-build": "esbuild --bundle src/main.ts --minify --outfile=dist/main.js",
+    "cms-proxy": "netlify-cms-proxy-server",
+    "cms-git": "cross-env MODE=git netlify-cms-proxy-server",
+    "cms": "run-p cms-dev cms-proxy",
+    "production": "cross-env NODE_ENV=production node --require dotenv/config ./esbuild.js",
+    "prod": "cross-env NODE_ENV=production node --require dotenv/config ./esbuild.js",
+    "local": "run-p cms-git cms-dev"
+  },
+  "dependencies": {
+    "@types/node": "^15.12.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "esbuild": "^0.12.6",
+    "netlify-cms": "^2.10.137",
+    "netlify-cms-app": "^2.15.17",
+    "netlify-cms-proxy-server": "^1.3.18",
+    "netlify-cms-widget-colorpicker": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.3.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
