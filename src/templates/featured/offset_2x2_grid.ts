@@ -1,6 +1,4 @@
-
-
-import { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core';
+import type { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core';
 
 type Field= CmsFieldBase & CmsFieldObject;
 let field:Field = {
@@ -45,6 +43,3 @@ let field:Field = {
     ]
 };
 export default field;
-
-
-

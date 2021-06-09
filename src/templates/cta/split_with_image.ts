@@ -1,4 +1,4 @@
-import { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core';
+import type { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core';
 import SizeOptions from '../../options/SizeOptions';
 
 type Field= CmsFieldBase & CmsFieldObject;

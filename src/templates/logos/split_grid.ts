@@ -1,4 +1,4 @@
-import { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core';
+import type { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core';
 import GapSizes from '../../options/GapSizes';
 import SizeOptions from '../../options/SizeOptions';
 
