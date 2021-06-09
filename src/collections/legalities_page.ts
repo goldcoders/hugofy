@@ -1,4 +1,4 @@
-import { CmsCollection } from 'netlify-cms-core';
+import type { CmsCollection } from 'netlify-cms-core';
 import { LegalitiesData } from '../data';
 
 let legalities_page:CmsCollection= {

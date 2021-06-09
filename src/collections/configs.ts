@@ -1,4 +1,4 @@
-import { CmsCollection } from 'netlify-cms-core';
+import type { CmsCollection } from 'netlify-cms-core';
 import { AppConfig, MenuConfig, ParamConfig } from "../config";
 import { CartData, SocialData } from "../data";
 

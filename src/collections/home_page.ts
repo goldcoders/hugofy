@@ -1,4 +1,4 @@
-import { CmsCollection } from 'netlify-cms-core';
+import type { CmsCollection } from 'netlify-cms-core';
 import { DynamicHomeContent, HeroAngleImageOnRight, HeroAppWithScreenShot, HeroSimpleCentered, HeroSplitImage, HeroWithSignUpVideo } from '../templates';
 import { ContactCard } from '../templates/contact';
 import { CtaBranPanel, CtaSimpleCentered, CtaSimpleJustified, CtaSimpleStacked, CtaSplitWithImage } from '../templates/cta';

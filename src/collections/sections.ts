@@ -1,4 +1,4 @@
-import { CmsCollection } from 'netlify-cms-core';
+import type { CmsCollection } from 'netlify-cms-core';
 import { BlogContent, ContactContent, FaqContent, LegalitiesContent, ProductContent } from '../content';
 
 let sections:CmsCollection= {

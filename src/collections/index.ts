@@ -1,4 +1,4 @@
-import { CmsCollection } from 'netlify-cms-core';
+import type { CmsCollection } from 'netlify-cms-core';
 import { blog_page } from './blog_page';
 import { colors } from './colors';
 import { configs } from './configs';
