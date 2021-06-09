@@ -1,5 +1,5 @@
 
-import { CmsCollectionFile } from 'netlify-cms-core';
+import type { CmsCollectionFile } from 'netlify-cms-core';
 
 let config:CmsCollectionFile = {
     "file": "/content/products/_index.md",

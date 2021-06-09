@@ -1,4 +1,4 @@
-import { CmsCollectionFile } from 'netlify-cms-core';
+import type { CmsCollectionFile } from 'netlify-cms-core';
 import HTTPMETHODS from "../options/HTTPMETHODS";
 import InputTags from "../options/InputTags";
 
