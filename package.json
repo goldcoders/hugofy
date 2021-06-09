@@ -8,11 +8,10 @@
     "last 1 chrome versions"
   ],
   "scripts": {
-    "start": "snowpack dev",
-    "build": "esbuild --bundle src/main.ts --minify --outfile=dist/main.js",
+    "dev": "snowpack dev",
     "local-server": "netlify-cms-proxy-server",
-    "dev": "run-p start local-server",
-    "prod": "cross-env NODE_ENV=production node --require dotenv/config ./esbuild.js"
+    "cms": "run-p local-server dev",
+    "build": "cross-env NODE_ENV=production node --require dotenv/config ./esbuild.js"
   },
   "dependencies": {
     "@types/node": "^15.12.2",
