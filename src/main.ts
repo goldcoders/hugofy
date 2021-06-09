@@ -1,27 +1,38 @@
 import CMS from 'netlify-cms-app';
-import { CmsBackend, CmsConfig } from 'netlify-cms-core';
+import type { CmsBackend, CmsBackendType, CmsConfig } from 'netlify-cms-core';
 import collections from './collections/index';
 import './events';
 import './shortcodes';
-import './widgets';
 
+const local_backend: boolean = process.env.SNOWPACK_PUBLIC_BACKEND;
+const backendType: CmsBackendType = process.env.SNOWPACK_PUBLIC_BACKEND_TYPE;
+const media_folder: string = `${process.env.SNOWPACK_PUBLIC_MEDIA_FOLDER}`;
+const repo: string = `${process.env.SNOWPACK_PUBLIC_REPO}`;
+const branch: string = `${process.env.SNOWPACK_PUBLIC_BRANCH}` || 'main';
+const public_folder: string = `${process.env.SNOWPACK_PUBLIC_PUBLIC_FOLDER}`;
+const site_url: string = `${process.env.SNOWPACK_PUBLIC_SITE_URL}`;
+const site_domain: string = `${process.env.SNOWPACK_PUBLIC_DOMAIN}`;
+const display_url: string = `${process.env.SNOWPACK_PUBLIC_DISPLAY_URL}`;
+const show_preview_links: boolean = process.env.SNOWPACK_PUBLIC_SHOW_PREVIEW_LINKS;
 
 let backend: CmsBackend = {
-    name: "git-gateway",
-    branch: "main"
+    name: backendType,
+    branch,
+    base_url: site_url,
+    repo,
+    site_domain
 }
 
-let config: CmsConfig = {
+let config:CmsConfig = {
     backend,
-    local_backend: false,
-    load_config_file: false,
-    media_folder: 'static/images',
-    logo_url: 'images/logo.svg',
-    public_folder: '/images',
-    site_url: process.env.HUGO_BASEURL,
-    display_url: process.env.HUGO_BASEURL,
-    show_preview_links: false,
+    local_backend,
+    media_folder,
+    public_folder,
+    site_url,
+    display_url,
+    show_preview_links,
     collections
 }
+
 CMS.init({config});
 
