@@ -14,7 +14,7 @@ let config:CmsCollectionFile = {
             "widget": "list",
             "fields": [
                 {
-                    "label": "Name",
+                    "label": "Category",
                     "name": "name",
                     "widget": "string",
                     "pattern": [

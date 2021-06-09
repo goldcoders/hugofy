@@ -14,7 +14,7 @@ let config:CmsCollectionFile = {
             "label_singular": "Tag",
             "fields": [
                 {
-                    "label": "Name",
+                    "label": "Tag",
                     "name": "name",
                     "widget": "string",
                     "pattern": [
