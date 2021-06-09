@@ -1,4 +1,4 @@
-import { CmsCollectionFile } from 'netlify-cms-core';
+import type { CmsCollectionFile } from 'netlify-cms-core';
 import { fb_field, github_field, instagram_field, linkedin_field, twitter_field, youtube_field } from '../social';
 
 let config:CmsCollectionFile = {
