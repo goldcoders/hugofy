@@ -1,4 +1,4 @@
-import { CmsCollectionFile } from 'netlify-cms-core';
+import type { CmsCollectionFile } from 'netlify-cms-core';
 
 let menu:CmsCollectionFile = {
     "file": "/config/_default/menu.toml",

@@ -1,4 +1,4 @@
-import { CmsCollectionFile } from 'netlify-cms-core';
+import type { CmsCollectionFile } from 'netlify-cms-core';
 import SizeOptions from '../options/SizeOptions';
 
 let config:CmsCollectionFile = {
