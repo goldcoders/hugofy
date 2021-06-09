@@ -2,7 +2,10 @@
 
 ![Hugofy - Hugo Site CMS](https://user-images.githubusercontent.com/55337687/120845837-ec50ee00-c5a3-11eb-9b7f-3cfcf46af3c5.png)
 
+## Site Using Hugofy:
 
+- [pitlords.com](https://pitlords.com)
+- [thriftshop.site](https://thriftshop.site)
 ## Basic Requirements
 
 - [git](https://git-scm.com/downloads)
