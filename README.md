@@ -1,6 +1,6 @@
-# Hugofy - Hugo CMS
+# Hugofy - Hugo Site CMS
 
-![Hugofy - Hugo CMS](https://user-images.githubusercontent.com/55337687/120845837-ec50ee00-c5a3-11eb-9b7f-3cfcf46af3c5.png)
+![Hugofy - Hugo Site CMS](https://user-images.githubusercontent.com/55337687/120845837-ec50ee00-c5a3-11eb-9b7f-3cfcf46af3c5.png)
 
 
 ## Basic Requirements
@@ -8,6 +8,8 @@
 - [git](https://git-scm.com/downloads)
 - [nodejs & npm](https://nodejs.org/en/download/)
 - [hugo](https://github.com/gohugoio/hugo/releases)
+- [snowpack](https://www.snowpack.dev/tutorials/getting-started)
+- [esbuild](https://esbuild.github.io/getting-started/)
 - [yarn](https://yarnpkg.com/getting-started/install)
 
 ## Set ENV Path
@@ -19,10 +21,10 @@
 ### Usage
 
 - open gitbash on windows , or terminal on linux / mac
-- go to your Project Directory
-- type command: `git clone https://github.com/goldcoders/hugofy`
+- go to your Hugo Site Directory
+- type command: `git clone https://github.com/goldcoders/hugofy cms`
+- go to cms folder: `cd cms`
 - install all the dependencies type command: `yarn`
-
 ### SET Your .env
 
 > Assuming you are already inside `cms` folder
@@ -36,20 +38,25 @@
 - you can also modify logo on login page by modifying LOGO_URL
 
 ```
-LOCAL_BACKEND=true
-SHOW_PREVIEW_LINKS=true
-MEDIA_FOLDER=exampleSite/static/images
-SITE_URL=http://example.com
-DISPLAY_URL=http://example.com
-LOGO_URL=/images/logo.svg
-PUBLIC_FOLDER=/images
+SNOWPACK_PUBLIC_BACKEND_TYPE=git-gateway
+SNOWPACK_PUBLIC_BASEURL=https://goldcoders.dev
+SNOWPACK_PUBLIC_REPO=goldcoders/site
+SNOWPACK_PUBLIC_BRANCH=main
+SNOWPACK_PUBLIC_BACKEND=true
+SNOWPACK_PUBLIC_SHOW_PREVIEW_LINKS=true
+SNOWPACK_PUBLIC_MEDIA_FOLDER=static/images
+SNOWPACK_PUBLIC_SITE_URL=https://goldcoders.dev
+SNOWPACK_PUBLIC_DOMAIN=goldcoders.dev
+SNOWPACK_PUBLIC_DISPLAY_URL=https://goldcoders.dev
+SNOWPACK_PUBLIC_LOGO_URL=/images/logo.svg
+SNOWPACK_PUBLIC_PUBLIC_FOLDER=/images
 ```
 
 ## Running CMS
 - go back to Project Folder
 - yarn cms
-- open one browser on left side on `http://localhost:1234` (LOCAL CMS)
-- open one browser on right side on `http://localhost:1313` (LOCAL SITE WITH LIVE RELOAD)
+- google chrome will open  `http://localhost:1234` (HUGOFY CMS)
+- open another tab on right side on `http://localhost:1313` (HUGO SITE)
 
 ## License
 
