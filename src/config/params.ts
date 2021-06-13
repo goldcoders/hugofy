@@ -40,39 +40,18 @@ let config:CmsCollectionFile = {
                     "hint": "Hide or Show Brand Name on Navbar"
                 },
                 {
-                    "label": "Fonts",
+                    "label": "Brand Font",
                     "name": "font",
-                    "widget": "object",
-                    "fields": [
-                        {
-                            "label": "Brand Name Font",
-                            "name": "name",
-                            "widget": "relation",
-                            "collection": "fonts",
-                            "file": "font_list",
-                            "display_fields": [
-                                "fonts.*.name"
-                            ],
-                            "search_fields": [
-                                "fonts.*.name"
-                            ],
-                            "value_field": "fonts.*.name"
-                        },
-                        {
-                            "label": "Brand Tag Font",
-                            "name": "tag",
-                            "widget": "relation",
-                            "collection": "fonts",
-                            "file": "font_list",
-                            "display_fields": [
-                                "fonts.*.name"
-                            ],
-                            "search_fields": [
-                                "fonts.*.name"
-                            ],
-                            "value_field": "fonts.*.name"
-                        }
-                    ]
+                    "widget": "relation",
+                    "collection": "fonts",
+                    "file": "font_list",
+                    "display_fields": [
+                        "fonts.*.name"
+                    ],
+                    "search_fields": [
+                        "fonts.*.name"
+                    ],
+                    "value_field": "fonts.*.name"
                 },
                 {
                     "label": "Brand Name",
@@ -82,11 +61,87 @@ let config:CmsCollectionFile = {
                     "required": false,
                 },
                 {
-                    "label": "Brand Tag",
-                    "name": "tag",
-                    "widget": "string",
-                    "default": "SITE",
+                    "label": "Color",
+                    "name": "color",
+                    "widget": "relation",
+                    "collection": "colors",
+                    "file": "color_list",
+                    "display_fields": [
+                        "colors.*.name"
+                    ],
+                    "search_fields": [
+                        "colors.*.name"
+                    ],
+                    "value_field": "colors.*.value"
+                },
+                {
+                    "label": "Shade",
+                    "name": "shade",
+                    "widget": "relation",
+                    "collection": "colors",
+                    "file": "color_list",
                     "required": false,
+                    "default": "",
+                    "hint": "themable colors have no shade e.g. primary, secondary , accent, etc. and neutral color such as black, white, and transparent.",
+                    "display_fields": [
+                        "shades.*.name"
+                    ],
+                    "search_fields": [
+                        "shades.*.name"
+                    ],
+                    "value_field": "shades.*.value"
+                }
+            ]
+        },
+        {
+            "label": "Brand Tag",
+            "name": "tag",
+            "widget": "object",
+            "fields": [
+                {
+                    "label": "Font",
+                    "name": "font",
+                    "widget": "relation",
+                    "collection": "fonts",
+                    "file": "font_list",
+                    "display_fields": [
+                        "fonts.*.name"
+                    ],
+                    "search_fields": [
+                        "fonts.*.name"
+                    ],
+                    "value_field": "fonts.*.name"
+                },
+                {
+                    "label": "Color",
+                    "name": "color",
+                    "widget": "relation",
+                    "collection": "colors",
+                    "file": "color_list",
+                    "display_fields": [
+                        "colors.*.name"
+                    ],
+                    "search_fields": [
+                        "colors.*.name"
+                    ],
+                    "value_field": "colors.*.value"
+                },
+                {
+                    "label": "Shade",
+                    "name": "shade",
+                    "widget": "relation",
+                    "collection": "colors",
+                    "file": "color_list",
+                    "required": false,
+                    "default": "",
+                    "hint": "themable colors have no shade e.g. primary, secondary , accent, etc. and neutral color such as black, white, and transparent.",
+                    "display_fields": [
+                        "shades.*.name"
+                    ],
+                    "search_fields": [
+                        "shades.*.name"
+                    ],
+                    "value_field": "shades.*.value"
                 }
             ]
         },
