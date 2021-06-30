@@ -7,7 +7,6 @@ import './shortcodes';
 const local_backend: boolean = !!import.meta.env.SNOWPACK_PUBLIC_BACKEND;
 const backendType: CmsBackendType = import.meta.env.SNOWPACK_PUBLIC_BACKEND_TYPE || 'git-gateway';
 const media_folder: string = `${import.meta.env.SNOWPACK_PUBLIC_MEDIA_FOLDER}` || 'static/images';
-const repo: string = `${import.meta.env.SNOWPACK_PUBLIC_REPO}` || 'goldcoders/hugo-dusk';
 const branch: string = `${import.meta.env.SNOWPACK_PUBLIC_BRANCH}` || 'main';
 const public_folder: string = `${import.meta.env.SNOWPACK_PUBLIC_PUBLIC_FOLDER}` || '/images';
 const site_url: string = `https://${import.meta.env.SNOWPACK_PUBLIC_DOMAIN}` || 'https://goldcoders.dev';
@@ -19,7 +18,6 @@ let backend: CmsBackend = {
     name: backendType,
     branch,
     base_url: site_url,
-    repo,
     site_domain
 }
 
