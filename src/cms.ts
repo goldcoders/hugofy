@@ -10,9 +10,9 @@ const media_folder: string = `${import.meta.env.SNOWPACK_PUBLIC_MEDIA_FOLDER}` |
 const repo: string = `${import.meta.env.SNOWPACK_PUBLIC_REPO}` || 'goldcoders/hugo-dusk';
 const branch: string = `${import.meta.env.SNOWPACK_PUBLIC_BRANCH}` || 'main';
 const public_folder: string = `${import.meta.env.SNOWPACK_PUBLIC_PUBLIC_FOLDER}` || '/images';
-const site_url: string = `${import.meta.env.SNOWPACK_PUBLIC_SITE_URL}` || 'https://goldcoders.dev';
+const site_url: string = `https://${import.meta.env.SNOWPACK_PUBLIC_DOMAIN}` || 'https://goldcoders.dev';
 const site_domain: string = `${import.meta.env.SNOWPACK_PUBLIC_DOMAIN}` || 'goldcoders.dev';
-const display_url: string = `${import.meta.env.SNOWPACK_PUBLIC_DISPLAY_URL}` || 'https://goldcoders.dev';
+const display_url: string = `https://${import.meta.env.SNOWPACK_PUBLIC_DOMAIN}` || 'https://goldcoders.dev';
 const show_preview_links: boolean = !!import.meta.env.SNOWPACK_PUBLIC_SHOW_PREVIEW_LINKS;
 
 let backend: CmsBackend = {
