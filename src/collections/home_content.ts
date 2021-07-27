@@ -27,6 +27,22 @@ let home_contents:CmsCollection= {
             "default": false
         },
         {
+            "label": "Custom Data",
+            "name": "custom",
+            "widget": "list",
+            "types": [
+                {
+                    label:"data",
+                    name: "data",
+                    widget: "object",
+                    fields: [
+                        {label: "Key", name: "key", widget: "string", default: "", required: false},
+                        {label: "Value", name: "value", widget: "string", default: "", required: false},
+                    ]
+                },
+            ]
+        },
+        {
             "label": "Title",
             "name": "title",
             "widget": "string"

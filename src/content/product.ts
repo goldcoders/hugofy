@@ -13,12 +13,6 @@ let config:CmsCollectionFile = {
             "default": true
         },
         {
-            "label": "Data",
-            "name": "data",
-            "widget": "hidden",
-            "default": {}
-        },
-        {
             "label": "Unpubish Page",
             "name": "draft",
             "widget": "boolean",
@@ -42,6 +36,22 @@ let config:CmsCollectionFile = {
             "name": "showpagination",
             "widget": "boolean",
             "default": true
+        },
+        {
+            "label": "Custom Data",
+            "name": "custom",
+            "widget": "list",
+            "types": [
+                {
+                    label:"data",
+                    name: "data",
+                    widget: "object",
+                    fields: [
+                        {label: "Key", name: "key", widget: "string", default: "", required: false},
+                        {label: "Value", name: "value", widget: "string", default: "", required: false},
+                    ]
+                },
+            ]
         },
         {
             "label": "Title",

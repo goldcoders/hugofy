@@ -24,7 +24,7 @@ let config:CmsCollectionFile = {
             "label": "Busines Address",
             "name": "business_address",
             "widget": "string"
-        },     
+        },
         {
             "label": "Certificates",
             "name": "certificates",

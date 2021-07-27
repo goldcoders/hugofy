@@ -6,12 +6,6 @@ let config:CmsCollectionFile = {
     "name": "data_cart",
     "fields": [
         {
-            "label": "Show Cart",
-            "name": "enable",
-            "widget": "boolean",
-            "default": true
-        },
-        {
             "label": "Title",
             "name": "title",
             "widget": "string",

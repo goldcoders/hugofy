@@ -22,13 +22,6 @@ let product_page:CmsCollection= {
                 "default": false
             },
             {
-                "label": "Data",
-                "name": "data",
-                "widget": "string",
-                "default": "{}",
-                "hint": "Useful for Creating Product Options"
-            },
-            {
                 "label": "Publish Date",
                 "name": "date",
                 "widget": "datetime"
@@ -36,25 +29,25 @@ let product_page:CmsCollection= {
             {
                 "label": "Draft",
                 "name": "draft",
-                "widget": "hidden",
+                "widget": "boolean",
                 "default": false
             },
             {
                 "label": "Show Cart",
                 "name": "showcart",
-                "widget": "hidden",
+                "widget": "boolean",
                 "default": true
             },
             {
                 "label": "Show Search",
                 "name": "showsearch",
-                "widget": "hidden",
+                "widget": "boolean",
                 "default": true
             },
             {
                 "label": "Show Review",
                 "name": "showreview",
-                "widget": "hidden",
+                "widget": "boolean",
                 "default": false
             },
             {
@@ -86,6 +79,22 @@ let product_page:CmsCollection= {
                 "pattern": [
                     "[0-9]*\\.[0-9][0-9]",
                     "Numbers with at least 2 Decimal places"
+                ]
+            },
+            {
+                "label": "Custom Data",
+                "name": "custom",
+                "widget": "list",
+                "types": [
+                    {
+                        label:"data",
+                        name: "data",
+                        widget: "object",
+                        fields: [
+                            {label: "Key", name: "key", widget: "string", default: "", required: false},
+                            {label: "Value", name: "value", widget: "string", default: "", required: false},
+                        ]
+                    },
                 ]
             },
             {

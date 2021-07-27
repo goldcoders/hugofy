@@ -26,12 +26,6 @@ let blog_page:CmsCollection= {
             "default": false
         },
         {
-            "label": "Data",
-            "name": "data",
-            "widget": "hidden",
-            "default": {}
-        },
-        {
             "label": "Publish Date",
             "name": "date",
             "widget": "datetime"

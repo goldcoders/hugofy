@@ -22,6 +22,12 @@ let home_page:CmsCollection= {
             "name": "home_index",
             "fields": [
                 {
+                    "label": "Index",
+                    "name": "index",
+                    "widget": "hidden",
+                    "default": true
+                },
+                {
                     "label": "Title",
                     "name": "title",
                     "widget": "string"
@@ -54,12 +60,28 @@ let home_page:CmsCollection= {
                     "default": true
                 },
                 {
+                    "label": "Custom Data",
+                    "name": "custom",
+                    "widget": "list",
+                    "types": [
+                        {
+                            label:"data",
+                            name: "data",
+                            widget: "object",
+                            fields: [
+                                {label: "Key", name: "key", widget: "string", default: "", required: false},
+                                {label: "Value", name: "value", widget: "string", default: "", required: false},
+                            ]
+                        },
+                    ]
+                },
+                {
                     "label": "Home Sections",
                     "name": "sections",
                     "widget": "list",
                     "label_singular": "Template",
                     "types": [
-                       DynamicHomeContent, 
+                       DynamicHomeContent,
                        HeroSimpleCentered,
                        HeroSplitImage,
                        HeroAngleImageOnRight,
@@ -72,7 +94,7 @@ let home_page:CmsCollection= {
                        CtaSimpleCentered,
                        CtaSimpleJustified,
                        CtaSimpleStacked,
-                       CtaSplitWithImage, 
+                       CtaSplitWithImage,
                        TestimonialSimpleCentered,
                        TestimonialSideBySide,
                        TesttimonialWithLargeAvatar,
