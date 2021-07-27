@@ -14,11 +14,6 @@ let config:CmsCollectionFile = {
             "default": true
         },
         {
-            "label": "Data",
-            "name": "data",
-            "widget": "hidden"
-        },
-        {
             "label": "Unpublish Page",
             "name": "draft",
             "widget": "boolean",
