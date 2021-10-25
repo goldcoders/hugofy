@@ -1,19 +1,18 @@
-import type { CmsCollection } from 'netlify-cms-core';
-import { BlogContent, ContactContent, FaqContent, LegalitiesContent, ProductContent } from '../content';
+import { BlogContent, ContactContent, FaqContent, LegalitiesContent, ProductContent } from '../content'
+import type { CmsCollection } from 'netlify-cms-core'
 
-let sections:CmsCollection= {
-    "name": "sections",
-    "label": "Site Sections",
-    "editor": {
-        "preview": false
-    },
-    "files": [
-       BlogContent, 
-       ProductContent,
-       FaqContent,
-       ContactContent,
-       LegalitiesContent,
-    ]
-};
-export { sections };
-
+const sections:CmsCollection = {
+  name: 'sections',
+  label: 'Site Sections',
+  editor: {
+    preview: false
+  },
+  files: [
+    BlogContent,
+    ProductContent,
+    FaqContent,
+    ContactContent,
+    LegalitiesContent
+  ]
+}
+export { sections }
