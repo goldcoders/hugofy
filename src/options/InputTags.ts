@@ -1,6 +1,6 @@
-let InputTags: Array<string> = [
-    "input",
-    "textarea"
-];
+const InputTags: Array<string> = [
+  'input',
+  'textarea'
+]
 
-export default InputTags;
+export default InputTags

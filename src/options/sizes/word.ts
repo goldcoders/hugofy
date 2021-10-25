@@ -1,5 +1,8 @@
-let WordSize: Array<string> = [
-    "auto", "px", "full", "screen",
-];
+const WordSize: Array<string> = [
+  'auto',
+  'px',
+  'full',
+  'screen'
+]
 
-export default WordSize;
+export default WordSize

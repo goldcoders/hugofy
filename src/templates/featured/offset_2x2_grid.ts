@@ -1,45 +1,45 @@
-import type { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core';
+import type { CmsFieldBase, CmsFieldObject } from 'netlify-cms-core'
 
 type Field= CmsFieldBase & CmsFieldObject;
-let field:Field = {
-    "label": "Featured Sections Offset 2x2 Grid",
-    "name": "featured_2x2_grid",
-    "widget": "object",
-    "summary": "Featured/Offset 2x2 Grid: {{fields.header}}",
-    "fields": [
+const field:Field = {
+  label: 'Featured Sections Offset 2x2 Grid',
+  name: 'featured_2x2_grid',
+  widget: 'object',
+  summary: 'Featured/Offset 2x2 Grid: {{fields.header}}',
+  fields: [
+    {
+      label: 'Header',
+      name: 'header',
+      widget: 'string'
+    },
+    {
+      label: 'Template',
+      name: 'template',
+      widget: 'hidden',
+      default: 'templates/features/offset-2x2-grid.html'
+    },
+    {
+      label: 'Features',
+      name: 'features',
+      widget: 'list',
+      fields: [
         {
-            "label": "Header",
-            "name": "header",
-            "widget": "string"
+          label: 'Title',
+          name: 'title',
+          widget: 'string'
         },
         {
-            "label": "Template",
-            "name": "template",
-            "widget": "hidden",
-            "default": "templates/features/offset-2x2-grid.html"
+          label: 'Description',
+          name: 'description',
+          widget: 'markdown'
         },
         {
-            "label": "Features",
-            "name": "features",
-            "widget": "list",
-            "fields": [
-                {
-                    "label": "Title",
-                    "name": "title",
-                    "widget": "string"
-                },
-                {
-                    "label": "Description",
-                    "name": "description",
-                    "widget": "markdown"
-                },
-                {
-                    "label": "Image",
-                    "name": "image",
-                    "widget": "image"
-                }
-            ]
+          label: 'Image',
+          name: 'image',
+          widget: 'image'
         }
-    ]
-};
-export default field;
+      ]
+    }
+  ]
+}
+export default field

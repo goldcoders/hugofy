@@ -1,15 +1,15 @@
-import type { CmsCollection } from 'netlify-cms-core';
-import { CategoryData, TagsData } from '../data';
+import { CategoryData, TagsData } from '../data'
+import type { CmsCollection } from 'netlify-cms-core'
 
-let taxonomies:CmsCollection= {
-    "name": "taxonomies",
-    "label": "Taxonomies",
-    "editor": {
-        "preview": false
-    },
-    "files": [
-        CategoryData,
-        TagsData,
-    ]
-};
-export { taxonomies };
+const taxonomies:CmsCollection = {
+  name: 'taxonomies',
+  label: 'Taxonomies',
+  editor: {
+    preview: false
+  },
+  files: [
+    CategoryData,
+    TagsData
+  ]
+}
+export { taxonomies }

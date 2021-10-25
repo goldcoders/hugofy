@@ -1,38 +1,35 @@
-import FloatSize from "./sizes/float"
-import IntSize from "./sizes/int"
-import FractionalSize from "./sizes/fraction"
-import WordSize from "./sizes/word"
 
-let SizeOptions: Array<string> = [
-    ...FloatSize,
-    ...IntSize,
-    ...FractionalSize,
-    ...WordSize,
-];
+import FloatSize from './sizes/float'
+import FractionalSize from './sizes/fraction'
+import IntSize from './sizes/int'
+import WordSize from './sizes/word'
 
-let AxisOptions: Array<string> = [
-    ...FloatSize,
-    ...IntSize,
-    ...FractionalSize,
-];
+const SizeOptions: Array<string> = [
+  ...FloatSize,
+  ...IntSize,
+  ...FractionalSize,
+  ...WordSize
+]
 
+const AxisOptions: Array<string> = [
+  ...FloatSize,
+  ...IntSize,
+  ...FractionalSize
+]
+/* eslint no-shadow: 0 */
 enum Axis {
-    x = "x",
-    y = "y",
+    x = 'x',
+    y = 'y',
 }
 
-let GapsOnX: Array<string> = AxisOptions.map((e) => {
-    return `${Axis.x}-${e}`
-});
+const GapsOnX: Array<string> = AxisOptions.map((el) => `${Axis.x}-${el}`)
 
-let GapsOnY: Array<string> = AxisOptions.map((e) => {
-    return `${Axis.y}-${e}`
-});
+const GapsOnY: Array<string> = AxisOptions.map((el) => `${Axis.y}-${el}`)
 
-let GapSizes: Array<string> = [
-    ...SizeOptions,
-    ...GapsOnX,
-    ...GapsOnY
-];
+const GapSizes: Array<string> = [
+  ...SizeOptions,
+  ...GapsOnX,
+  ...GapsOnY
+]
 
-export default GapSizes;
+export default GapSizes
