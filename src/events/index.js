@@ -1,1 +1,1 @@
-import './set-slug';
+import './set-slug'
