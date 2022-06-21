@@ -7,6 +7,7 @@
 - [pitlords.com](https://pitlords.com)
 - [thriftshop.site](https://thriftshop.site)
 - [goldcoders.dev](https://goldcoders.dev)
+- [paramountpetroleum.ph](https://paramountpetroleum.ph)
 
 ## Development Requirements
 
